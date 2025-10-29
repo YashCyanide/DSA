@@ -6,6 +6,21 @@
 
 public class Main {
 
+    //drop non dominants
+    public static void dominants(int x){
+        for (int i = 0; i < x; i++) {
+            for (int j = 0; j < x; j++) {
+                System.out.println(j + " " +i);
+            }
+        }
+        for (int k = 0; k < x; k++) {
+            System.out.println(k);
+        }
+        // for this function the complexity becomes as O(n^2+n) but wrt to n^2 , n becomes irrelevant.
+        // suppose x is 100 then x^2 is 10000 and x is 100 so we can neglect the n term form complexity
+        // hence again rule of thumb to drop non-dominants
+
+    }
     public static void osquare(int n){
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
