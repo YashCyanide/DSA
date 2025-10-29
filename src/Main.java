@@ -6,6 +6,16 @@
 
 public class Main {
 
+    public static void osquare(int n){
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                System.out.println(i + " " + j);
+            }
+        }
+        // this is an illustration of O(n^2)
+        // as loop runs for n*n time i.e n^2
+        // this is very less efficient as value of n increase computations increases to n^2
+    }
     public static void printItems(int n) {
         for (int i = 0; i < n; i++) {
             System.out.println(i);
@@ -21,7 +31,8 @@ public class Main {
 
     public static void main(String[] args) {
 //        System.out.println("Hello World");
-        printItems(10);
+//        printItems(10);
+        osquare(10);
     }
 
 }
