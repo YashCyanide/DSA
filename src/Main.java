@@ -11,6 +11,12 @@ public class Main {
             System.out.println(i);
         }
         // This is a O(n) as this code runs for n times
+        for (int j = 0; j < n; j++) {
+            System.out.println(j);
+        }
+        // you might think adding new for loop having n iterations will make the complexity as O(2n)
+        // but it is not because it is still O(n) as the complexity is directly proportional to the input size.
+        // hence rules of thumb for simplifying is to drop constants , it doesn't matter even if constant is in thousands
     }
 
     public static void main(String[] args) {
