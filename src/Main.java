@@ -44,6 +44,14 @@ public class Main {
         // hence rules of thumb for simplifying is to drop constants , it doesn't matter even if constant is in thousands
     }
 
+    public static int BigOof1(int n) {
+        return n+n+n;
+        // this is an O(1) as it is directly proportional to the input size
+        // as even the number of n increase the operations wll stay the same irrespective of value of n
+        // if we visualize O(n) on graph, it can be seen as flatline parallel to x axis
+
+    }
+
     public static void main(String[] args) {
 //        System.out.println("Hello World");
 //        printItems(10);
