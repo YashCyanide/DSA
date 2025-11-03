@@ -52,6 +52,19 @@ public class Main {
 
     }
 
+    public static int BigOoflogn(int n) {
+        int y = 1;
+        while (n > 1) {
+            n = n / 2;
+            y++;
+        }
+        return y;
+        // this is an O(log n) as it is directly proportional to the input size
+        // as even the number of n increase the operations wll stay the same irrespective of value of n
+        // if we visualize O(n) on graph, it can be seen as flatline parallel to x axis
+
+    }
+
     public static void main(String[] args) {
 //        System.out.println("Hello World");
 //        printItems(10);
